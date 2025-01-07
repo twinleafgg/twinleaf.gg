@@ -3,6 +3,9 @@
 
 The project is created to allow players of the PTCG to experience current and past formats that are not otherwise accesible in an online, web-based client.
 
+**Submitting PRs**
+Pull Requests will only be approved for new cards, and must be done in a new branch. Any engine/server upgrades/extensions should be discussed with the twinleaf team on Discord - https://discord.com/invite/Y9XKnC8dE5
+
 There are two projects:
 
 * **ptcg-server** is the game server. It is responsible for calculating the game state and propagating it to the connected clients by websockets.
