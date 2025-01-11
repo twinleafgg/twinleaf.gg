@@ -52,6 +52,7 @@ import { Phanpy } from './phanpy-ir';
 import { Pikachuex } from './pikachu-ex';
 import { Quaxwell } from './quaxwell';
 import { Rabsca } from './rabsca';
+import { Registeel } from './registeel';
 import { Rellor } from './rellor';
 import { RichEnergy } from './rich-energy';
 import { Sandygast } from './sandygast';
@@ -141,6 +142,7 @@ export const setSurgingSparks: Card[] = [
   new Phanpy(),
   new Koraidon(),
   new Rellor(),
+  new Registeel(),
   new Rabsca(),
   new Wochien(),
   new DuskBall(),
