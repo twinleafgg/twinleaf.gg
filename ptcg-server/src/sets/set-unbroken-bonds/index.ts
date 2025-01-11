@@ -33,6 +33,7 @@ import { Salazzle } from './salazzle';
 import { Spiritomb } from './spiritomb';
 import { TripleAccelerationEnergy } from './triple-acceleration-energy';
 import { Volcanion } from './volcanion';
+import { Wartortle } from './wartortle';
 import { Zeraora } from './zeraora';
 
 
@@ -72,5 +73,6 @@ export const setUnbrokenBonds: Card[] = [
   new Spiritomb(),
   new TripleAccelerationEnergy(),
   new Volcanion(),
+  new Wartortle(),
   new Zeraora()
 ];
