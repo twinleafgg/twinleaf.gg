@@ -10,6 +10,7 @@ import { Cleffa } from './cleffa';
 import { Dartrix } from './dartrix';
 import { Dragonair } from './dragonair';
 import { Dragoniteex } from './dragonite-ex';
+import { Drampa } from './drampa';
 import { Dratini } from './dratini';
 import { Entei } from './entei';
 import { Finizen } from './finizen';
@@ -50,6 +51,7 @@ export const setObsidianFlames: Card[] = [
   new Dartrix(),
   new Dragonair(),
   new Dragoniteex(),
+  new Drampa(),
   new Dratini(),
   new Entei(),
   new Finizen(),
