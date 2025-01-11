@@ -6,6 +6,7 @@ import { Evosoda } from './evosoda';
 import { FairyEnergy } from './fairy-energy';
 import { MuscleBand } from './muscle-band';
 import { Pikachu } from './pikachu';
+import { ProfessorSycamore } from './professor-sycamore';
 import { ProfessorsLetter } from './professors-letter';
 import { Raichu } from './raichu';
 import { ShadowCircle } from './shadow-circle';
@@ -23,6 +24,7 @@ export const setXY: Card[] = [
   new FairyEnergy(),
   new MuscleBand(),
   new Pikachu(),
+  new ProfessorSycamore(),
   new ProfessorsLetter(),
   new Raichu(),
   new ShadowCircle(),
