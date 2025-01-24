@@ -1,4 +1,3 @@
-
 export enum CardTag {
   POKEMON_SP = 'SP',
   POKEMON_EX = 'EX',
@@ -152,7 +151,8 @@ export enum CardType {
   GRW,
   LPM,
   FDY,
-  GRPD
+  GRPD,
+  RAPID_STRIKE
 }
 
 export enum SpecialCondition {
