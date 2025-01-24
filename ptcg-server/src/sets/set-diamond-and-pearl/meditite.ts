@@ -4,7 +4,7 @@ import { StoreLike } from '../../game/store/store-like';
 import { State } from '../../game/store/state/state';
 import { Effect } from '../../game/store/effects/effect';
 import { AttackEffect } from '../../game/store/effects/game-effects';
-import { CoinFlipPrompt, GameMessage } from '../../game';
+import { CoinFlipPrompt, GameMessage, StoreLike, State, StateUtils } from '../../game';
 import { AbstractAttackEffect, PutDamageEffect } from '../../game/store/effects/attack-effects';
 
 export class Meditite extends PokemonCard {
