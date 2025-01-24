@@ -1,4 +1,5 @@
 import { CardType, EnergyType } from '../../game/store/card/card-types';
+import { CardUtils } from '../../game/store/card/card-utils';
 import { EnergyCard } from '../../game/store/card/energy-card';
 import { CheckProvidedEnergyEffect } from '../../game/store/effects/check-effects';
 import { Effect } from '../../game/store/effects/effect';
@@ -30,29 +31,16 @@ export class UnitEnergyFDY extends EnergyCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof CheckProvidedEnergyEffect && effect.source.cards.includes(this)) {
-      const player = effect.player;
-      const pokemon = effect.source;
-
       try {
-        const energyEffect = new EnergyEffect(player, this);
+        const energyEffect = new EnergyEffect(effect.player, this);
         store.reduceEffect(state, energyEffect);
       } catch {
         return state;
       }
 
-      const pokemonCard = pokemon.getPokemonCard();
-      const attackCosts = pokemonCard?.attacks.map(attack => attack.cost);
-
-      const costs = attackCosts?.flat().filter(t => t !== CardType.COLORLESS) || [];
-      const alreadyProvided = effect.energyMap.flatMap(e => e.provides);
-      const neededType = costs.find(cost =>
-        this.blendedEnergies.includes(cost) &&
-        !alreadyProvided.includes(cost)
-      );
-
       effect.energyMap.push({
         card: this,
-        provides: neededType ? [neededType] : [CardType.COLORLESS]
+        provides: CardUtils.createSpecialEnergyArray(CardType.FDY)
       });
     }
     return state;
