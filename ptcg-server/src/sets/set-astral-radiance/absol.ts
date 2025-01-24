@@ -23,7 +23,7 @@ export class Absol extends PokemonCard {
             name: 'Claw Rend',
             cost: [ CardType.DARK,CardType.COLORLESS],
             damage: 50,
-            text: 'If your opponent’s Active Pokémon already has any damage counters on it, this attack does 70 more damage.'
+            text: 'If your opponent\'s Active Pokémon already has any damage counters on it, this attack does 70 more damage.'
           }
   ];
 
