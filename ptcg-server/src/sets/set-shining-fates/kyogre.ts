@@ -20,6 +20,7 @@ export class Kyogre extends PokemonCard {
   }];
 
   public set: string = 'SHF';
+  public regulationMark: string = 'D';
   public cardImage: string = 'assets/cardback.png';
   public setNumber: string = '21';
   public name: string = 'Kyogre';
