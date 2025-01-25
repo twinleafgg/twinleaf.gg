@@ -6,6 +6,7 @@ import { ApplinSV, SnomSV } from './full-art';
 import { GalarianWeezing } from './galarian-weezing';
 import { Horsea } from './horsea';
 import { Koffing } from './koffing';
+import { Kyogre } from './kyogre';
 import { FrosmothSHF } from './other-prints';
 import { Rillaboom } from './rillaboom';
 import { Rookidee } from './rookidee';
@@ -19,6 +20,7 @@ export const setShiningFates: Card[] = [
   new GalarianWeezing(),
   new Horsea(),
   new Koffing(),
+  new Kyogre(),
   new Rillaboom(),
   new Rookidee(),
   new Snom(),
