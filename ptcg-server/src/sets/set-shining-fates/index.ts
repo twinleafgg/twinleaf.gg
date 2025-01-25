@@ -7,6 +7,7 @@ import { GalarianWeezing } from './galarian-weezing';
 import { Horsea } from './horsea';
 import { Koffing } from './koffing';
 import { FrosmothSHF } from './other-prints';
+import { Reshiram } from './reshiram';
 import { Rillaboom } from './rillaboom';
 import { Rookidee } from './rookidee';
 import { Snom } from './snom';
@@ -19,6 +20,7 @@ export const setShiningFates: Card[] = [
   new GalarianWeezing(),
   new Horsea(),
   new Koffing(),
+  new Reshiram(),
   new Rillaboom(),
   new Rookidee(),
   new Snom(),
