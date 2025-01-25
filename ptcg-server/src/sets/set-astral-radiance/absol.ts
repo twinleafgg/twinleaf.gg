@@ -8,20 +8,20 @@ export class Absol extends PokemonCard {
 
   public stage: Stage = Stage.BASIC;
 
-  public cardType: CardType = CardType.DARK;
+  public cardType: CardType = ;
 
   public hp: number = 100;
 
   public attacks = [
         {
             name: 'Swirling Diaster',
-            cost: [CardType.DARK],
+            cost: [C],
             damage: 0,
             text: 'This attack does 10 damage to each of your opponent\'s Pokémon. (Don\'t apply Weakness and Resistance for Benched Pokémon.)'
           },
           {
             name: 'Claw Rend',
-            cost: [ CardType.DARK,CardType.COLORLESS],
+            cost: [ D,C],
             damage: 50,
             text: 'If your opponent\'s Active Pokémon already has any damage counters on it, this attack does 70 more damage.'
           }
