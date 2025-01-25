@@ -8,7 +8,7 @@ export class Absol extends PokemonCard {
 
   public stage: Stage = Stage.BASIC;
 
-  public cardType: CardType = ;
+  public cardType: CardType = D;
 
   public hp: number = 100;
 
