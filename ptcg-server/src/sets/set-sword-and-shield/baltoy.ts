@@ -3,21 +3,21 @@ import { Stage, CardType } from '../../game/store/card/card-types';
 
 export class Baltoy extends PokemonCard {
   public stage: Stage = Stage.BASIC;
-  public cardType: CardType = CardType.FIGHTING;
+  public cardType: CardType = F;
   public hp: number = 70;
-  public weakness = [{ type: CardType.GRASS }];
+  public weakness = [{ type: G }];
   public resistance = [];
-  public retreat = [CardType.COLORLESS];
+  public retreat = [C];
 
   public attacks = [{
     name: 'Beam',
-    cost: [CardType.COLORLESS],
+    cost: [C],
     damage: 10,
     text: ''
   },
   {
     name: 'Sand Spray',
-    cost: [CardType.FIGHTING, CardType.FIGHTING],
+    cost: [F, F],
     damage: 30,
     text: ''
   }];
