@@ -1,5 +1,6 @@
 import { Card } from '../../game/store/card/card';
 import { Aggron } from './aggron';
+import { Aipom } from './aipom';
 import { Applin } from './applin';
 import { Applin2 } from './applin-2';
 import { Aron } from './aron';
@@ -76,6 +77,7 @@ import { Zapdos } from './zapdos';
 export const setTwilightMasquerade: Card[] = [
 
   new Aggron(),
+  new Aipom(),
   new Aron(),
   new Blisseyex(),
   // new BoomerangEnergy(),
