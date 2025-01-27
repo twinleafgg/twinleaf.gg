@@ -7,6 +7,7 @@ import { Lysandre } from './lysandre';
 import { MCharizardEX } from './m-charizard-ex';
 import { Milotic } from './milotic';
 import { Miltank } from './miltank';
+import { Rapidash } from './rapidash';
 import { ProtectionCube } from './protection-cube';
 import { Pyroar } from './pyroar';
 import { SacredAsh } from './sacred-ash';
@@ -26,6 +27,7 @@ export const setFlashfire: Card[] = [
   new Miltank(),
   new ProtectionCube(),
   new Pyroar(),
+  new Rapidash(),
   new SacredAsh(),
   new Seedot(),
   new Skrelp(),
