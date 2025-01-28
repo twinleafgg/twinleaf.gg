@@ -52,6 +52,7 @@ export * from './set-plasma-freeze';
 export * from './set-plasma-storm';
 
 //XY Era
+export * from './set-kalos-starter-set'
 export * from './set-flashfire';
 export * from './set-furious-fists';
 export * from './set-phantom-forces';
