@@ -12,6 +12,7 @@ import { Frosmoth } from './frosmoth';
 import { GalarianZigzagoon } from './galarian-zigzagoon';
 import { GalarianPerrserker } from './galarian_perrserker';
 import { GiantHearth } from './giant-hearth';
+import { Gossifleur } from './gossifleur';
 import { Inteleon } from './inteleon';
 import { Maractus } from './maractus';
 import { Marnie } from './marnie';
@@ -41,6 +42,7 @@ export const setSwordAndShield: Card[] = [
   new GalarianPerrserker(),
   new GalarianZigzagoon(),
   new GiantHearth(),
+  new Gossifleur(),
   new Inteleon(),
   new Maractus(),
   new Marnie(),
