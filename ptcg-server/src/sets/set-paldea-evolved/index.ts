@@ -30,6 +30,7 @@ import { Hoppip } from './hoppip';
 import { Hydreigon } from './hydreigon';
 import { Iono } from './iono';
 import { JetEnergy } from './jet-energy';
+import { Jumpluff } from './jumpluff';
 import { Lokix } from './lokix';
 import { LuminousEnergy } from './luminous-energy';
 import { Luxray } from './luxray';
