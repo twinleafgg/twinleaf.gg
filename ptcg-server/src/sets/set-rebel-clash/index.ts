@@ -8,6 +8,7 @@ import { CapaciousBucket } from './capacious-bucket';
 import { CaptureEnergy } from './capture-energy';
 import { Caterpie } from './caterpie';
 import { Coalossal } from './coalossal';
+import { CursedShovel } from './cursed-shovel';
 import { Dragapult } from './dragapult';
 import { Duraludon } from './duraludon';
 import { Electivire } from './electivire';
@@ -35,6 +36,7 @@ export const setRebelClash: Card[] = [
   new CaptureEnergy(),
   new Caterpie(),
   new Coalossal(),
+  new CursedShovel(),
   new Dragapult(),
   new Duraludon(),
   new Electivire(),
