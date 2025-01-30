@@ -22,6 +22,9 @@ import { ZamazentaV } from './zamazenta-v';
 import { Zarude } from './zarude';
 import { ZeraoraV } from './zeraora-v';
 import { ZeraoraVSTAR } from './zeraora-vstar';
+import {
+  UltraBallCRZ,
+} from './reprints'
 
 export const setCrownZenith: Card[] = [
 
@@ -48,4 +51,5 @@ export const setCrownZenith: Card[] = [
   new Zarude(),
   new ZeraoraV(),
   new ZeraoraVSTAR(),
+  new UltraBallCRZ(),
 ];

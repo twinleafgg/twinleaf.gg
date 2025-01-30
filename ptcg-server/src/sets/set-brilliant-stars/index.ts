@@ -43,6 +43,7 @@ import { ShayminV } from './shaymin-v';
 import { ShayminVSTAR } from './shaymin-vstar';
 import { TeamYellsCheer } from './team-yells-cheer';
 import { Torterra } from './torterra';
+import { UltraBall, UltraBallGold } from './ultra-ball'
 
 
 export const setBrilliantStars: Card[] = [
@@ -90,6 +91,8 @@ export const setBrilliantStars: Card[] = [
   new ShayminVSTAR(),
   new PotHelmet(),
   new TeamYellsCheer(),
-  new Torterra()
+  new Torterra(),
+  new UltraBall(),
+  new UltraBallGold(),
 
 ];
