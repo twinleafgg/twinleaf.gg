@@ -1,5 +1,6 @@
 import { Charizardex } from '../set-obsidian-flames/charizard-ex';
 import { Artazon } from '../set-paldea-evolved/artazon';
+import { Jumpluff } from '../set-paldea-evolved/jumpluff';
 import { Iono } from '../set-paldea-evolved/iono';
 import { Mimikyu } from '../set-paldea-evolved/mimikyu';
 import { Noibat } from '../set-paldea-evolved/noibat';
@@ -41,6 +42,12 @@ export class IonoPAF extends Iono {
   public fullName = 'Iono PAF';
   public set = 'PAF';
   public setNumber = '80';
+}
+
+export class JumpluffPAF extends Jumpluff {
+  public fullName = 'Jumpluff PAF';
+  public set = 'PAF';
+  public setNumber = '98'
 }
 
 export class MimikyuPAF extends Mimikyu {

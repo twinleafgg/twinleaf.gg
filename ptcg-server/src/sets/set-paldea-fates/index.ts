@@ -1,6 +1,6 @@
 import { Card } from '../../game/store/card/card';
 import { Atticus } from './atticus';
-import { CharmanderPAF, MimikyuPAF, RareCandyPAF, CharizardexPAF, ElectricGeneratorPAF, IonoPAF, NestBallPAF, ProfessorsResearchPAF, ProfessorsResearch2PAF, UltraBallPAF, ArmarougePAF, NatuPAF, XatuPAF, CharcadetPAF, RaltsPAF, GardevoirexPAF, NoibatPAF, NoivernexPAF, SquawkabillyexPAF, ArtazonPAF } from './card-images';
+import { CharmanderPAF, MimikyuPAF, RareCandyPAF, CharizardexPAF, ElectricGeneratorPAF, IonoPAF, JumpluffPAF, NestBallPAF, ProfessorsResearchPAF, ProfessorsResearch2PAF, UltraBallPAF, ArmarougePAF, NatuPAF, XatuPAF, CharcadetPAF, RaltsPAF, GardevoirexPAF, NoibatPAF, NoivernexPAF, SquawkabillyexPAF, ArtazonPAF } from './card-images';
 import { Charmeleon } from './charmeleon';
 import { Clive } from './clive';
 import { Espathraex } from './espathra-ex';
@@ -38,6 +38,7 @@ export const setPaldeaFates: Card[] = [
   new CharizardexPAF(),
   new ElectricGeneratorPAF(),
   new IonoPAF(),
+  new JumpluffPAF(),
   new NestBallPAF(),
   new ProfessorsResearchPAF(),
   new ProfessorsResearch2PAF(),
