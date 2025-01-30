@@ -1,5 +1,5 @@
 import { PokemonCard } from '../../game/store/card/pokemon-card';
-import { CardType, Stage } from '../../game/store/card/card-types';
+import { CardTag, CardType, Stage } from '../../game/store/card/card-types';
 import { StoreLike, State, CoinFlipPrompt, GameMessage } from '../../game';
 import { Effect } from '../../game/store/effects/effect';
 import { AttackEffect } from '../../game/store/effects/game-effects';
@@ -8,6 +8,7 @@ export class Hoppip extends PokemonCard {
   public stage: Stage = Stage.BASIC;
   public cardType: CardType = CardType.GRASS;
   public hp: number = 40;
+  public tags = [CardTag.RAPID_STRIKE];
   public weakness = [{ type: CardType.FIRE }];
 
   public attacks = [{
@@ -26,7 +27,7 @@ export class Hoppip extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if (effect instanceof AttackEffect) {
+    if (effect instanceof AttackEffect && effect.attack === this.attacks[0]) {
       const player = effect.player;
       let numHeads = 0;
       return store.prompt(state, [
@@ -37,7 +38,6 @@ export class Hoppip extends PokemonCard {
           return this.reduceEffect(store, state, effect);
         }
         effect.damage = numHeads * 20;
-        return state;
       });
     }
 
