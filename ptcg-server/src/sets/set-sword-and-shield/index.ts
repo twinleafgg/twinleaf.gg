@@ -1,6 +1,7 @@
 import { Card } from '../../game/store/card/card';
 import { AirBalloon } from './air-balloon';
 import { AuroraEnergy } from './aurora-energy';
+import { BigCharm } from './big-charm';
 import { Centiskorch } from './centiskorch';
 import { Cinccino } from './cinccino';
 import { Cinderace } from './cinderace';
@@ -30,6 +31,7 @@ import { Welder } from './welder';
 export const setSwordAndShield: Card[] = [
   new AirBalloon(),
   new AuroraEnergy(),
+  new BigCharm(),
   new Centiskorch(),
   new Cinccino(),
   new Cinderace(),
