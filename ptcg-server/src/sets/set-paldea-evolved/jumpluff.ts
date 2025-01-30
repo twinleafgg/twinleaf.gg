@@ -41,24 +41,24 @@ export class Jumpluff extends PokemonCard {
 
             // Stop this effect if this card's Ability is locked
             try {
-            const stub = new PowerEffect(player, {
-                name: 'test',
-                powerType: PowerType.ABILITY,
-                text: '',
-            }, this);
-            store.reduceEffect(state, stub);
+                const stub = new PowerEffect(player, {
+                    name: 'test',
+                    powerType: PowerType.ABILITY,
+                    text: '',
+                }, this);
+                store.reduceEffect(state, stub);
             } catch {
-            return state;
+                return state;
             }
 
             return store.prompt(state, [
-            new CoinFlipPrompt(player.id, GameMessage.COIN_FLIP)
+                new CoinFlipPrompt(player.id, GameMessage.COIN_FLIP)
             ], result => {
-            if (result === true) {
-                effect.preventDefault = true;
-                store.log(state, GameLog.LOG_ABILITY_BLOCKS_DAMGE, { name: opponent.name, pokemon: this.name });
-                return state;
-            }
+                if (result === true) {
+                    effect.preventDefault = true;
+                    store.log(state, GameLog.LOG_ABILITY_BLOCKS_DAMGE, { name: opponent.name, pokemon: this.name });
+                    return state;
+                }
             });
         }
 
@@ -79,7 +79,7 @@ export class Jumpluff extends PokemonCard {
                 { allowCancel: false }
             ), targets => {
                 if (!targets || targets.length === 0) {
-                return;
+                    return;
                 }
                 const damageEffect = new PutDamageEffect(effect, 30);
                 damageEffect.target = targets[0];
