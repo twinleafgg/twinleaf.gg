@@ -17,6 +17,7 @@ export * from './set-deoxys';
 export * from './set-team-rocket-returns';
 export * from './set-crystal-guardians';
 export * from './set-power-keepers';
+export * from './set-legend-maker';
 export * from './set-firered-leafgreen'
 
 //DP Era
