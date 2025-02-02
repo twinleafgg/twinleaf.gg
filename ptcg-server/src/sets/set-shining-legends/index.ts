@@ -2,6 +2,7 @@ import { Card } from '../../game/store/card/card';
 import { Croconaw } from './croconaw';
 import { Marshadow } from './marshadow';
 import { Plusle } from './plusle';
+import { Shaymin } from './shaymin';
 import { ShiningGenesect } from './shining-genesect';
 import { ShiningMew } from './shining-mew';
 import { Venusaur } from './venusaur';
@@ -12,6 +13,7 @@ export const setShiningLegends: Card[] = [
   new Croconaw(),
   new Marshadow(),
   new Plusle(),
+  new Shaymin(),
   new ShiningGenesect(),
   new ShiningMew(),
   new Venusaur(),
